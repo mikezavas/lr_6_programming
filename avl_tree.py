@@ -14,7 +14,8 @@ class AVLTree:
 
     def update_height(self, node):
         if node:
-            node.height = 1 + max(self.get_height(node.left), self.get_height(node.right))
+            node.height = 1 + max(self.get_height(node.left),
+                                  self.get_height(node.right))
 
     def get_balance(self, node):
         if not node:
